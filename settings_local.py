@@ -1,1 +1,1 @@
-ROOT_URL = 'http://inlinestyler.torchboxapps.com'
+ROOT_URL = 'https://inlinestyler.visigo.com'

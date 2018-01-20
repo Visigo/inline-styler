@@ -1,6 +1,6 @@
 # Inline Styler makes CSS compatible with email clients.
 
-Try it here: http://inlinestyler.torchbox.com
+Try it here: https://inlinestyler.visigo.com
 
 It's a service which, when given a block of HTML including CSS, will parse the CSS and convert it to inline `style=""` attributes on each elements matched by the CSS rules found.
 
@@ -23,9 +23,11 @@ To use this app, CSS you wish to be "inlined" must be declared in the HTML eithe
   
   This file requires periodic updates as Campaign Monitor update their spreadsheet. Comparing the existing file to CM's spreadsheet, the key differences are that their XLS has been stripped of formatting, blank lines or duplicate groups of selector/element information.
 
-## Support
+## History
 
-Inline Styler was written several years ago partly as a personal "Hello World" experiment to learn Django/Python. I welcome anyone willing to fork and contribute to the code, but unfortunately I don't have time to maintain this myself - for example updating the css compliance CSV. I'm instead releasing it to the public after many requests for the source.
+Inline Styler was created by @davecranwell and was originally hosted at http://inlinestyler.torchbox.com/.  This went offline in Dec 2017, so I have forked this and setup hosting at https://inlinestyler.visigo.com/.
+
+Original github repo is: https://github.com/davecranwell/inline-styler.
 
 ## Questions/Discussion
-* Find me on twitter at @davecranwell
+* Questions and discussion can be posted at https://forums.visigo.com/c/inline-styler

@@ -4,11 +4,11 @@ import os, sys
 FILEROOT = os.path.dirname(__file__)
 STATICROOT = os.path.join(FILEROOT, "static")
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-	('David Cranwell', 'david@torchbox.com'),
+	('none', 'none@none.com'),
 )	
 
 MANAGERS = ADMINS
@@ -25,7 +25,7 @@ DATABASE_PORT = ''             # Set to empty string for default. Not used with 
 # although not all choices may be available on all operating systems.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = 'Europe/London'
+TIME_ZONE = 'America/Los_Angeles'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
@@ -80,8 +80,16 @@ INSTALLED_APPS = (
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.sites',
+	'django.contrib.staticfiles',
 	'inlinestylr.styler'
 )
+
+#updated for hosting static files with django 1.3.7
+STATICFILES_DIRS = (
+    os.path.join(FILEROOT, 'static'),
+)
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(FILEROOT))) + '/public/static/'
 
 # Get local settings
 try:
